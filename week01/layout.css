@@ -4,34 +4,34 @@ body, html {
 }
 
 header, nav, main, aside, footer {
-padding: 40px;
+    padding: 40px;
 }
 
 header {
-background-color: #333;
-color: white;
+    background-color: #333;
+    color: white;
 }
 
 nav {
-background-color: black;
-color: white;
-flex: auto;
+    background-color: black;
+    color: white;
+    flex: auto;
 }
 
 main {
-float: left;
-width: calc(50% - 40px);
-background-color: lightgrey;
+    float: left;
+    width: calc(50% - 40px);
+    background-color: lightgrey;
 }
 
 aside {
-    float:right; 
-    width: calc(50% -40px);
-    background-color:white; 
+    float: right;
+    width: calc(50% - 40px);
+    background-color: white;
 }
 
 footer {
-    clear:both; 
-    background-color:#333; 
-    color:white; 
+    clear: both;
+    background-color: #333;
+    color: white;
 }
