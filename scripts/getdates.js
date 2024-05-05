@@ -1,6 +1,6 @@
-window.onload = function () {
-    var lastModifiedDate = new Date(document.lastModified);
-    var formattedDate = lastModifiedDate.toLocaleDateString();
-    var footerParagraph = document.getElementById("lastmodified");
-    footerParagraph.textContent = "Last modified: " + formattedDate;
-}
+const currentYearInfo = new Date().getFullYear();
+const lastModifiedInfo = document.lastModified;
+const currentYear = document.getElementById("currentYear");
+const lastModified = document.getElementById("lastModified");
+currentYear.innerHTML = currentYearInfo;
+lastModified.innerHTML = `Last Modification: ${lastModifiedInfo}`;
