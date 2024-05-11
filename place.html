@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Chavez">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Bruno Chavez - Country Page">
+    <title>Country Page - WDD 131: Dynamic Web Fundamentals - Bruno Chavez</title>
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+    <header>
+        <h1>Peru</h1>
+        <nav>
+            <div class="-peruflag">
+                <img src="images/flag-peru.svg" alt="Flag of Peru">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="peru-background">
+            <picture>
+            <source src="images/peru-horizontal.webp" media="(min-width: 1000px)">
+            <img src="images/.vertical.webp" alt="Peru-landscape">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <div class="data-row">
+                <div class="left-col">Area:</div>
+                <div class="right-col">496,224 square miles</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Population:</div>
+                <div class="right-col">34.05 million</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Capital:</div>
+                <div class="right-col">Lima</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Languages:</div>
+                <div class="right-col">Spanish, Quechua, Aymara, amazonian Indigenous</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Currency:</div>
+                <div class="right-col">Sol</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Time Zone:</div>
+                <div class="right-col">Peru Time (PET)</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Calling Code:</div>
+                <div class="right-col">+51</div>
+            </div>
+            <div class="data-row">
+                <div class="left-col">Internet TLD:</div>
+                <div class="right-col">.pe</div>
+            </div>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <div id="weather-img">
+                <img src="images/peru-weather.svg" alt="weather icon" width="150">
+            </div>
+            <div class="weather-data"></div>
+            <div class="data-wather">
+                <div class="left">Temperature:</div>
+                <div class="right">
+                    <div class="temp">17°C</div>
+                </div>
+            </div>
+            <div class="data-wather">
+                <div class="left">Conditions:</div>
+                <div class="right">Mostly clear</div>
+            </div>
+            <div class="data-wather">
+                <div class="left">Wind:</div>
+                <div class="right">
+                    <div class="wind">11.2 km/h</div>
+                </div>
+            </div>
+            <div class="data-wather">
+                <div class="left">Wind Chill:</div>
+                <div class="right">
+                    <div class="windchill"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> - Bruno Chavez - Peru</p>
+        <p id="lastModified">Last Modification:</p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/place.js"></script>
+</body>
+</html>
