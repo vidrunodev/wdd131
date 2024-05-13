@@ -1,48 +1,46 @@
-@media (min-width: 1000px){
-#weather-img {
-    display: none;
-}
+@media screen and (max-width: 999px) {
+    header {
+        font-size: 30px;
+    }
 
-}
-h2  {
-    background-color: rgba(245, 245, 220, 0.8);
-    text-align: center;
-    position: absolute;
-    letter-spacing: 3px;
-    padding-bottom: 50px;
-    padding: 10px;
-    top: -5px;
-    left: -35px;
-}
+    h1 {
+        font-size: 30px;
+    }
 
-picture img {
-    width: 100%;
-    height: auto;
-}
+    .data, .weather{
+        position: static;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 90%;
+        margin: 20px auto;
+    }
 
-.weather, .data {
-    position: absolute;
-    padding-top: 2.5rem;
-    background-color: var(--background-color-transparent);
-}
+    .data {
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
 
-.data {
-    top: 25%;
-    left: 5%;
-    width: 450px;
-}
+    .weather {
+        top: 200%; 
+        right: 50%; 
+        transform: translate(50%, -50%);
+        width: 90%;
+    }
 
-.weather {
-    bottom: -20%;
-    right: 5%;
-    width: 430px;
-    position: absolute;
-}
+    .data-row, .data-weather {
+        flex-direction: column;
+    }
 
-.weather h2::after {
-    content: "🌤️";
-.weather-data {
-    padding-top: 20px;
-}
+    .left-column, .right-column {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
 
+    #weather-img {
+        margin: 0 auto;
+    }
 }
