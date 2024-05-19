@@ -1,0 +1,172 @@
+@charset "utf-8";
+@import url("https://fonts.google.com/share?selection.family=Lora:ital,wght@0,400..700;1,400..700|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900");
+
+/* Define the CSS variables */
+:root {
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Lora', serif;
+    --header: #086788;
+    --title: white;
+    --blue-light: #07a0c3;
+    --orange: #ff9933ef;
+    --white: #fff;
+    --blanchedalmond: blanchedalmond;
+}
+
+header {
+    background-color: var(--header);
+    color: var(--title);
+    position: relative;
+    padding: 20px;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+main{
+    margin:auto;
+    background-color: var(--paragraph-font);
+}
+
+
+footer {
+    background-color: var(--header);
+    text-align: center;
+    padding: 20px;
+    font-variant: small-caps;
+}
+
+footer p {
+    color: var(--white);
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+.title {
+    margin: 0;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.navigation {
+    display: none;
+    text-align: center;
+    font-size: 1.2rem;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.show-links {
+    display: flex;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--white);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.navigation a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem 1.3rem;
+    color: var(--orange);
+    transition: 0.3s ease-in-out;
+    font-size: 1.6rem;
+    padding-left: 5rem;
+}
+
+.navigation a:hover {
+    background-color: var(--blue-light);
+    color: var(--white);
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Temple card styles */
+.temple-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.temple-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.temple-card h3 {
+    margin-top: 8px;
+    font-size: 2em;
+}
+
+#temple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+    font-family: var(--paragraph-font);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 90%;
+    background-color: var(--blanchedalmond);
+}
+
+.grid-container {
+    display: grid; /* Change display property to grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid columns */
+    gap: 20px; /* Adjust gap between grid items */
+    justify-content: center; /* Center the grid items horizontally */
+    align-items: flex-start; /* Align grid items to the top */
+    margin: 1.5rem auto;
+    font-family: var(--paragraph-font);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 90%;
+    background-color: var(--blanchedalmond);
+
+}
