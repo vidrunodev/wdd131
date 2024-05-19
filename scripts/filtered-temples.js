@@ -74,7 +74,7 @@ const temples = [
         location: "Salt Lake City, Utah, United States",
         dedicated: "1893, April, 6",
         area: 253000,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-temple/400x250/salt-lake-temple-lds-280551-wallpaper.jpg",
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city-utah/400x250/salt-lake-temple-37762.jpg",
         alt: "Salt Lake Temple",
     },
     {
@@ -82,7 +82,7 @@ const temples = [
         location: "Tokyo, Japan",
         dedicated: "1980, October, 27",
         area: 52744,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-lds-299294-wallpaper.jpg",
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x640/tokyo_japan_temple-main.jpeg",
         alt: "Tokyo Japan Temple",
     },
     {
@@ -90,7 +90,7 @@ const temples = [
         location: "Paris, France",
         dedicated: "2017, May, 21",
         area: 44235,
-            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris-france-temple-lds-309341-wallpaper.jpg",
+            imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris-france-temple-exterior-1905503.jpg",
         alt: "Paris France Temple",
     }
 ];
