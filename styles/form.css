@@ -6,7 +6,7 @@
     --blue-light: #07a0c3;
     --white: #fff;
     --blanchedalmond: blanchedalmond;
-    --orange: orange;
+    --black: black;
 }
 
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
@@ -92,7 +92,7 @@ h1 {
 .form label {
     display: block;
     padding-top: 1rem;
-    color: orange;
+    color: black;
     font-size: .9rem;
     font-weight: bold;
     font-family: var(--paragraph-font);
