@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Chavez">
+    <title>Product Review Form</title>
+    <link href="styles/form.css" rel="stylesheet">
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="form">
+            <fieldset>
+                <legend>Product</legend>
+                <select id="dropdown" name="options" required>
+                    <option value="" disabled selected>Select an option</option>
+                </select>
+                <fieldset>
+                    <legend required>Rating</legend>
+                    <label><input type="radio" name="rating" value="one">⭐️</label>
+                    <label><input type="radio" name="rating" value="two">⭐️⭐️</label>
+                    <label><input type="radio" name="rating" value="three">⭐️⭐️⭐️</label>
+                    <label><input type="radio" name="rating" value="four">⭐️⭐️⭐️⭐️</label>
+                    <label><input type="radio" name="rating" value="five">⭐️⭐️⭐️⭐️⭐️</label>                        
+                </fieldset>
+                <fieldset>
+                    <legend>Date of installation</legend>
+                    <label><input type="date" name="completedDate" required></label>
+                </fieldset>
+                <fieldset id="useful">
+                    <legend>Useful Features</legend>
+                    <label><input type="checkbox" name="feature" value="durability" id="durable">Durability</label>
+                    <label><input type="checkbox" name="feature" value="easeofUSe" id="use">Ease of Use</label>
+                    <label><input type="checkbox" name="feature" value="performance" id="performance">Performance</label>
+                    <label><input type="checkbox" name="feature" value="design" id="design">Design</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Review</legend>
+                    <textarea id="review" name="review"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Your Name</legend>
+                    <input type="text" id="name" name="name">
+                </fieldset>
+                <div class="submit-wrapper">
+                    <input type="submit" value="Post Review">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> - Bruno Chavez - Peru</p>
+        <p id="lastModified">Last Modification:</p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
