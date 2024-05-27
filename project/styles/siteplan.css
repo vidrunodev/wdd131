@@ -184,3 +184,14 @@ nav a:hover {
     border-top: 1px solid;
     border-right: 1px solid;
 }
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px; 
+    text-align: center; 
+}
+
+footer p {
+    margin: 0;
+    color: var(--headline-color-on-color);
+}
