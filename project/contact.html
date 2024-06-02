@@ -10,44 +10,34 @@
 </head>
 <body>
     <header>
-        <h1>Product Review Form</h1>
+        <h1>Contact Form</h1>
     </header>
     <main>
-        <form method="get" action="review.html" class="form">
+        <section class="intro">
+            <h2>Get in Touch with Us</h2>
+            <p>Have questions or need assistance? Contact us through our form, and we'll get back to you as soon as possible.</p>
+        </section>
+        <form method="post" action="thanks.html" class="form">
             <fieldset>
-                <legend>Product</legend>
-                <select id="dropdown" name="options" required>
-                    <option value="" disabled selected>Select an option</option>
-                </select>
-                <fieldset>
-                    <legend>Rating</legend>
-                    <label><input type="radio" name="rating" value="one">★</label>
-                    <label><input type="radio" name="rating" value="two">★★</label>
-                    <label><input type="radio" name="rating" value="three">★★★</label>
-                    <label><input type="radio" name="rating" value="four">★★★★</label>
-                    <label><input type="radio" name="rating" value="five">★★★★★</label>                        
-                </fieldset>
-                <fieldset>
-                    <legend>Date of installation</legend>
-                    <label><input type="date" name="completedDate" required></label>
-                </fieldset>
-                <fieldset id="useful">
-                    <legend>Useful Features</legend>
-                    <label><input type="checkbox" name="feature" value="durability" id="durable">Durability</label>
-                    <label><input type="checkbox" name="feature" value="easeofUSe" id="use">Ease of Use</label>
-                    <label><input type="checkbox" name="feature" value="performance" id="performance">Performance</label>
-                    <label><input type="checkbox" name="feature" value="design" id="design">Design</label>
-                </fieldset>
-                <fieldset>
-                    <legend>Review</legend>
-                    <textarea id="review" name="review"></textarea>
-                </fieldset>
+                <legend>Contact Information</legend>
                 <fieldset>
                     <legend>Your Name</legend>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Phone</legend>
+                    <input type="tel" id="phone" name="phone" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Message</legend>
+                    <textarea id="message" name="message" required></textarea>
                 </fieldset>
                 <div class="submit-wrapper">
-                    <input type="submit" value="Post Review">
+                    <input type="submit" value="Send Message">
                 </div>
             </fieldset>
         </form>

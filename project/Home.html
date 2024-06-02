@@ -6,13 +6,74 @@
     <meta name="description" content="W06 Assignment: Website Project">
     <meta name="author" content="Bruno Chavez">
     <title>Home</title>
-    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    <link type="text/css" rel="stylesheet" href="styles/home.css">
 </head>
 <body>
     <header>
-        <h1>Vidruno Store</h1>
-        <h2>Bruno Chavez</h2>
-        <h2>WDD 131 - Dynamic Web Fundamentals</h2>
+        <img src="images/vidruno-logo.png" alt="home-logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="household.html">Household</a>
+            <a href="electronics.html">Electronics</a>
+            <a href="pets.html">Pets</a>
+            <a href="contact.html">Contact</a>
+            <a href="siteplan.html">Site Plan</a>
+        </nav>
     </header>
+
+    <section class="hero" style="background-image: url('hero-image.jpg');">
+        <img src="images/homepage-hero.png" alt="home-hero">
+        <h1>Welcome to VIDRUNO STORE</h1>
+        <p>Discover a world of quality products for your home, electronics, and pets!</p>
+    </section>
+
+    <section class="intro">
+        <p>At Vidruno Store, we're committed to providing you with the best selection of items to meet your needs. Explore our wide range of products and find everything you need to enhance your lifestyle.</p>
+    </section>
+
+    <section class="offerings">
+        <h2>What we offer</h2>
+        <div class="offering-grid">
+            <div class="offering">
+                <h3>Quality</h3>
+                <p>From kitchen essentials to home decor, we offer a curated collection of household items to make your living space more comfortable and functional.</p>
+            </div>
+            <div class="offering">
+                <h3>State-of-the-art Electronics</h3>
+                <p>Stay ahead with the latest electronic gadgets and devices. Whether you're looking for smartphones, laptops, or smart home technology, we've got you covered.</p>
+            </div>
+            <div class="offering">
+                <h3>Pet Supplies and Accessories</h3>
+                <p>Pamper your furry friends with our range of pet supplies. From nutritious food to cozy beds and toys, we have everything you need to keep your pets happy and healthy.</p>
+            </div>
+            <div class="offering">
+                <h3>Community Support</h3>
+                <p>Join our thriving community of shoppers, share your experiences, and find the inspiration you need to make informed decisions. Engage with fellow customers on our forums and social media channels.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="journey" style="background-image: url('journey-image.jpg');">
+        <img src="images/homepage-decor.png" alt="home-decor">
+        <h2>Your Journey, Your Pace</h2>
+    </section>
+
+    <section class="unique-journey">
+        <p>We understand that every shopping journey is unique.</p>
+        <p>Whether you're redecorating your home, upgrading your gadgets, or spoiling your pets, we're here to make your shopping experience enjoyable and hassle-free.</p>
+        <p>Take the first step towards a better lifestyle. Explore our website and start your Vidruno Store journey today!</p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> - Bruno Chavez - Peru</p>
+        <p id="lastModified">Last Modification:</p>
+        <a href="#">Site Plan</a>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>
