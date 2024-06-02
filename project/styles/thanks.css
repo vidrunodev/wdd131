@@ -33,16 +33,35 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center;
     background-color: var(--nav-background-color);
-    color: var(--headline-color-on-color);
-    text-align: center;
-    padding: 20px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    margin: auto;
 }
 
-h1 {
-    font-family: var(--heading-font);
-    margin: 0;
-    font-size: 2.5rem;
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+    margin-right: 500px;
+    font-size: 28px;
+}
+
+header nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+header nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
 }
 
 main {
@@ -72,14 +91,29 @@ main {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--nav-background-color);
-    text-align: center;
-    padding: 20px;
     color: var(--paragraph-color-on-color);
+    padding: 10px;
 }
 
-footer p {
-    margin: 0;
-    line-height: 1.5;
-    font-size: 1.3rem;
+footer p, footer a {
+    margin: 5px 0;
+    color: var (--paragraph-color-on-color);
+}
+
+footer .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-links a {
+    color: var (--nav-link-color);
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: var (--nav-hover-link-color);
 }

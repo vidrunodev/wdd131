@@ -57,7 +57,7 @@ form {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: var (--primary-color);
+    background-color: var(--primary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -67,9 +67,9 @@ fieldset {
 }
 
 legend {
-    font-family: var (--heading-font);
+    font-family: var(--heading-font);
     font-size: 1.5rem;
-    color: var (--headline-color-on-white);
+    color: var(--headline-color-on-white);
 }
 
 label, input, textarea {
@@ -91,8 +91,8 @@ input, textarea {
 }
 
 input[type="submit"] {
-    background-color: var (--nav-background-color);
-    color: var (--paragraph-color-on-color);
+    background-color: var(--nav-background-color);
+    color: var(--paragraph-color-on-color);
     border: none;
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -101,18 +101,33 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: var (--nav-hover-background-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 footer {
-    background-color: var (--nav-background-color);
-    text-align: center;
-    padding: 20px;
-    color: var (--paragraph-color-on-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--nav-background-color);
+    color: var(--paragraph-color-on-color);
+    padding: 10px;
 }
 
-footer p {
-    margin: 0;
-    line-height: 1.5;
-    font-size: 1.3rem;
+footer p, footer a {
+    margin: 5px 0;
+    color: var(--paragraph-color-on-color);
+}
+
+footer .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-links a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: var(--nav-hover-link-color);
 }
