@@ -68,8 +68,9 @@ header nav a:hover {
     height: 300px;
     background-size: cover;
     background-position: center;
-    color: var(--headline-color-on-color);
+    color: var(--paragraph-color-on-color);
     text-align: center;
+    padding-top: 20px;
 }
 
 .hero img {
@@ -85,15 +86,17 @@ header nav a:hover {
 .hero h1, .hero p {
     position: relative;
     z-index: 2;
+    padding-bottom: 20px;
 }
 
 .hero h1 {
-    font-size: 2em;
+    font-size: 4em;
     margin: 0;
+    padding-bottom: 20px;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .intro {
@@ -127,30 +130,33 @@ header nav a:hover {
 .journey {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 300px;
     background-size: cover;
     background-position: center;
     color: var(--headline-color-on-white);
     text-align: center;
+    padding-top: 20px;
 }
 
 .journey img {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 150px;
-    height: auto;
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 
 .journey h2 {
     position: relative;
     z-index: 2;
-    font-size: 1.5em;
+    font-size: 4.5em;
     margin: 0;
+    padding-bottom: 240px;
 }
 
 .unique-journey {
