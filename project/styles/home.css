@@ -193,3 +193,44 @@ footer .social-links a {
 footer .social-links a:hover {
     color: var(--nav-hover-link-color);
 }
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .offering-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}

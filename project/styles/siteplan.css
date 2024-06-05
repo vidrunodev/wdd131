@@ -260,3 +260,28 @@ footer p {
     margin: 0;
     color: var(--headline-color-on-color);
 }
+
+@media (max-width: 768px) {
+    .sitemap {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "home home"
+            "page2 page2"
+            "page3 page3";
+    }
+}
+
+@media (max-width: 480px) {
+    .sitemap {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "home"
+            "page2"
+            "page3";
+    }
+
+    .colors td {
+        height: 2em;
+    }
+}

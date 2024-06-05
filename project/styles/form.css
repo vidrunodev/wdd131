@@ -131,3 +131,41 @@ footer .social-links a {
 footer .social-links a:hover {
     color: var(--nav-hover-link-color);
 }
+
+@media (max-width: 768px) {
+    header, .intro, form, footer {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .intro p, legend, label, input, textarea {
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header, .intro, form, footer {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro p, legend, label, input, textarea {
+        font-size: 0.875rem;
+    }
+
+    input[type="submit"] {
+        padding: 6px 12px;
+        font-size: 0.875rem;
+    }
+}

@@ -117,3 +117,18 @@ footer .social-links a {
 footer .social-links a:hover {
     color: var (--nav-hover-link-color);
 }
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .message h2, .counter h3 {
+        font-size: 1.5rem;
+    }
+
+    .message p, .counter p {
+        font-size: 1rem;
+    }
+}
